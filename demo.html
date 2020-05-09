@@ -1,8 +1,8 @@
-<html >
+<!DOCTYPE html><html>
 	<head>
-		<link rel="stylesheet" href="lib/dualselect/css/dualselect.1.0.min.css" />
-		<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-3.4.1.js"></script>
-		<script type="text/javascript" language="javascript" src="lib/dualselect/js/dualselect.1.0.min.js"></script>
+		<link rel="stylesheet" href="lib/dualselect/css/dualselect-1.0.min.css" />
+		<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" language="javascript" src="lib/dualselect/js/dualselect-1.0.min.js"></script>
 		<script type="text/javascript" language="javascript">
 			function optionChanged(elm) {
 				console.log('optionChanged', jQuery(elm).val());
@@ -16,15 +16,15 @@
 
 				dualselect2 = jQuery('#select2').dualselect({
 					beforeSelectOption: function (_option) {
-						if (_option.text().indexOf('o30') >= 0) {
-							alert('o30 selection not allowed');
+						if (_option.text().indexOf('option30') >= 0) {
+							alert('option30 selection not allowed');
 							return false;
 						}
 						return true;
 					}
 					,beforeRemoveOption: function (_option) {
-						if (_option.text().indexOf('o25') >= 0) {
-							alert('o25 removal not allowed');
+						if (_option.text().indexOf('option25') >= 0) {
+							alert('option25 removal not allowed');
 							return false;
 						}
 						return true;
@@ -39,49 +39,49 @@
 	<body>
 		<form type="post">
 			<select id="select1" name="select1_name_" multiple="multiple" size="5" onchange="optionChanged(this);">
-				<option value="o1value" disabled>o1</option>
-				<option value="o2value">o2</option>
-				<option value="o3value">o3</option>
-				<option value="o4value" disabled>o4</option>
-				<option value="o5value">o5</option>
-				<option value="o6value">o6</option>
-				<option value="o7value" selected disabled>o7</option>
-				<option value="o8value">o8</option>
-				<option value="o9value" selected>o9</option>
-				<option value="o10value">o10</option>
-				<option value="o11value" selected>o11</option>
-				<option value="o12value" selected>o12</option>
-				<option value="o13value">o13</option>
-				<option value="o14value">o14</option>
-				<option value="o15value">o15</option>
-				<option value="o16value">o16</option>
-				<option value="o17value">o17</option>
-				<option value="o18value">o18</option>
-				<option value="o19value">o19</option>
-				<option value="o20value">o20</option>
+				<option value="o1value" disabled>1-option</option>
+				<option value="o2value">2-option</option>
+				<option value="o3value">3-option</option>
+				<option value="o4value" disabled>4-option</option>
+				<option value="o5value">5-option</option>
+				<option value="o6value">6-option</option>
+				<option value="o7value" selected disabled>7-option</option>
+				<option value="o8value">8-option</option>
+				<option value="o9value" selected>9-option</option>
+				<option value="o10value">10-option</option>
+				<option value="o11value" selected>11-option</option>
+				<option value="o12value" selected>12-option</option>
+				<option value="o13value">13-option</option>
+				<option value="o14value">14-option</option>
+				<option value="o15value">15-option</option>
+				<option value="o16value">16-option</option>
+				<option value="o17value">17-option</option>
+				<option value="o18value">18-option</option>
+				<option value="o19value">19-option</option>
+				<option value="o20value">20-option</option>
 			</select>
 			<br>
 			<select id="select2" name="select2" multiple="multiple" size="10">
-				<option value="o21">o21</option>
-				<option value="o22">o22</option>
-				<option value="o23">o23</option>
-				<option value="o24">o24</option>
-				<option value="o25">o25</option>
-				<option value="o26">o26</option>
-				<option value="o27">o27</option>
-				<option value="o28">o28</option>
-				<option value="o29">o29</option>
-				<option value="o30">o30</option>
-				<option value="o31">o31</option>
-				<option value="o32">o32</option>
-				<option value="o33">o33</option>
-				<option value="o34">o34</option>
-				<option value="o35">o35</option>
-				<option value="o36">o36</option>
-				<option value="o37">o37</option>
-				<option value="o38">o38</option>
-				<option value="o39">o39</option>
-				<option value="o40">o40</option>
+				<option value="value21">option21</option>
+				<option value="value22">option22</option>
+				<option value="value23">option23</option>
+				<option value="value24">option24</option>
+				<option value="value25">option25</option>
+				<option value="value26">option26</option>
+				<option value="value27">option27</option>
+				<option value="value28">option28</option>
+				<option value="value29">option29</option>
+				<option value="value30">option30</option>
+				<option value="value31">option31</option>
+				<option value="value32">option32</option>
+				<option value="value33">option33</option>
+				<option value="value34">option34</option>
+				<option value="value35">option35</option>
+				<option value="value36">option36</option>
+				<option value="value37">option37</option>
+				<option value="value38">option38</option>
+				<option value="value39">option39</option>
+				<option value="value40">option40</option>
 			</select>
 		</form>
 	</body>
