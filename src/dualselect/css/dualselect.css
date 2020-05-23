@@ -75,7 +75,7 @@ select.is-dualselect option:disabled {
 	width: 100%;
 }
 .dualselect-wrapper-avl-filter,.dualselect-wrapper-sel-filter {
-	width: 95%;
+	width: 90%;
 }
 .dualselect-wrapper-avl-filter input,.dualselect-wrapper-sel-filter input {
 	border: 1px solid #e0e0e0;
