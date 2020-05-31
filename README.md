@@ -22,19 +22,29 @@ select1.destroy();
 
 ## Parameters
 
-- `dualselectClass` : CSS class to be applied, when element is converted to dualselect. Default is `is-dualselect`.
-- `wrapperElement` : HTML element wrapping the dualselect. Default is `div`.
-- `wrapperClass` : CSS class applied on the wrapping element. Default is `dualselect-wrapper`.
-- `showFilters` : Show filter boxes. Default is `true`.
-- `moveOnSelect` : As soon as option(s) are selected, they are immediatly moved to the selection element. Default is `true`.
-- - If `showMoveButtons` is `false` then this can not be `false`.
-- `showMoveButtons` : Show the buttons for selecting and unselecting the options. Default is `true`.
-- - If `moveOnSelect` is `false` then this can not be `false`.
-- `selectText` : Text appearing on the select button. Default is `&gt;` _html code for &gt;_.
-- `selectAllText` : Text appearing on the select all button. Default is `&gt;&gt;` _html code for &gt;&gt;_.
-- `removeText` : Text appearing on the unselect/remove button. Default is `&lt;` _html code for &lt;_.
-- `removeAllText` : Text appearing on the unselect/remove button. Default is `&lt;&lt;` _html code for &lt;&lt;_.
-- `beforeSelectOption` : Function to be called before making the selections of option(s). Function should return `true` in order to select the option, otherwise `false`. Option is passed as an argument to the function as 
+`dualselectClass` : CSS class to be applied, when element is converted to dualselect. Default is `is-dualselect`.
+
+`wrapperElement` : HTML element wrapping the dualselect. Default is `div`.
+
+`wrapperClass` : CSS class applied on the wrapping element. Default is `dualselect-wrapper`.
+
+`showFilters` : Show filter boxes. Default is `true`.
+
+`moveOnSelect` : As soon as option(s) are selected, they are immediatly moved to the selection element. Default is `true`.
+	If `showMoveButtons` is `false` then this can not be `false`.
+
+`showMoveButtons` : Show the buttons for selecting and unselecting the options. Default is `true`.
+	If `moveOnSelect` is `false` then this can not be `false`.
+
+`selectText` : Text appearing on the select button. Default is `&gt;` _html code for &gt;_.
+
+`selectAllText` : Text appearing on the select all button. Default is `&gt;&gt;` _html code for &gt;&gt;_.
+
+`removeText` : Text appearing on the unselect/remove button. Default is `&lt;` _html code for &lt;_.
+
+`removeAllText` : Text appearing on the unselect/remove button. Default is `&lt;&lt;` _html code for &lt;&lt;_.
+
+`beforeSelectOption` : Function to be called before making the selections of option(s). Function should return `true` in order to select the option, otherwise `false`. Option is passed as an argument to the function as 
 ```html
 <select id="limitedSelect" name="limitedSelect" multiple="multiple" size="10">
 	<option value="0" selected>Option A</option>
@@ -58,7 +68,7 @@ var limitedSelect = jQuery('#limitedSelect').dualselect({
 	}
 });
 ```
-- `beforeRemoveOption` : Function to be called removing the option(s). Function should return `true` in order to unselect/remove the option, otherwise `false`. Option is passed as an argument to the function as
+`beforeRemoveOption` : Function to be called removing the option(s). Function should return `true` in order to unselect/remove the option, otherwise `false`. Option is passed as an argument to the function as
 ```html
 <select id="limitedSelect" name="limitedSelect" multiple="multiple" size="10">
 	<option value="0">Option A</option>
@@ -85,7 +95,7 @@ var limitedSelect = jQuery('#limitedSelect').dualselect({
 ```
 
 ## Methods
-- `resync` : Refreshes or reinitializes the dualselect with the core html element. This is helpful if some other function and/or event modifies the main control and we now need to show the effect of it.
+`resync` : Refreshes or reinitializes the dualselect with the core html element. This is helpful if some other function and/or event modifies the main control and we now need to show the effect of it.
 ```javascript
 var select1 = jQuery('#select1').dualselect();
 select1.resync();
