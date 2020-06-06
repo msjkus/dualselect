@@ -1,6 +1,6 @@
 # dualselect
 
-**dualselect** is a [jQuery](https://jquery.com/) plugin to convert the look n feel of traditional multi select to a fancy dual box select.
+**dualselect** is a [jQuery](https://jquery.com/) plugin to convert the look n feel of traditional multi select to a fancy dual box select. See it in action from [demo](https://msjkus.github.io/dualselect/demo.html)
 
 ## How to use
 
