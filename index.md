@@ -1,5 +1,3 @@
-# dualselect
-
 ## How to use
 
 To use with default features use
